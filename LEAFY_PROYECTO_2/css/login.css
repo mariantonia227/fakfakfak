@@ -1,0 +1,250 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+
+.login-screen {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login-left {
+  width: 50%;
+  overflow: hidden;
+}
+
+.login-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  border-radius: 0;
+  display: block;
+}
+
+/* MITAD DERECHA (formulario) */
+.login-right {
+  width: 50%;
+  background-color: #f4f4f4f0; /* gris claro del header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: white;
+  width: 70%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px #0000001e;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+/* Títulos */
+.login-box h2 {
+  color: #131313;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.login-box h2 span {
+  color: #80B918; /* Verde principal */
+}
+
+.slogan {
+  color: #545e40;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+/* Formulario */
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-box label {
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.login-box input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #80B918;
+}
+
+/* Botón principal */
+.btn-login {
+  margin-top: 10px;
+  background-color: #80B918;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background-color: rgb(124, 149, 2);
+}
+
+/* Texto adicional */
+.registro {
+  font-size: 14px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.registro a {
+  color: #80B918;
+  text-decoration: none;
+}
+
+.registro a:hover {
+  text-decoration: underline;
+}
+
+/* Volver al inicio */
+.volver {
+  display: block;
+  margin-top: 10px;
+  color: #545e40;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.volver:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ================= TOASTS ================= */
+
+#toast-container{
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:99999;
+
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+/* TOAST */
+
+.toast{
+    min-width:320px;
+    max-width:380px;
+
+    padding:16px 18px;
+
+    border-radius:16px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    color:white;
+    font-size:14px;
+    font-weight:500;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    animation:toastEntrada .35s ease;
+
+    backdrop-filter:blur(8px);
+}
+
+/* TIPOS */
+
+.toast.success{
+    background:linear-gradient(135deg,#38b000,#70e000);
+}
+
+.toast.error{
+    background:linear-gradient(135deg,#d90429,#ef233c);
+}
+
+.toast.info{
+    background:linear-gradient(135deg,#4361ee,#4895ef);
+}
+
+/* BOTON */
+
+.toast button{
+    background:none;
+    border:none;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    margin-left:14px;
+    opacity:.8;
+    transition:.2s;
+}
+
+.toast button:hover{
+    opacity:1;
+    transform:scale(1.1);
+}
+
+/* SALIDA */
+
+.toast.hide{
+    animation:toastSalida .35s ease forwards;
+}
+
+/* ANIMACIONES */
+
+@keyframes toastEntrada{
+
+from{
+    opacity:0;
+    transform:translateX(100%);
+}
+
+to{
+    opacity:1;
+    transform:translateX(0);
+}
+
+}
+
+@keyframes toastSalida{
+
+to{
+    opacity:0;
+    transform:translateX(120%);
+}
+
+}
+
+
+
+
+
+
+

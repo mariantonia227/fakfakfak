@@ -1,0 +1,80 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background:#f4f6f9;
+    margin:0;
+    padding:0;
+}
+
+/* Contenedor principal */
+.checkout-container{
+    width:500px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0, 0, 0, 0.397);
+}
+
+/* Título */
+.checkout-container h2{
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* Subtítulos */
+.checkout-container h3{
+    margin-top:20px;
+    margin-bottom:10px;
+    color:#555;
+}
+
+/* Inputs */
+.checkout-container input,
+.checkout-container select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:10px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    font-size:14px;
+}
+
+/* Botón */
+.checkout-container button{
+    width:100%;
+    padding:12px;
+    background:#8ebf32;
+    border:none;
+    border-radius:6px;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:15px;
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+.checkout-container button:hover{
+    background:#8ebf3289;
+}
+
+/* Botón volver */
+.btn-volver{
+    display:inline-block;
+    margin:20px 0 0 20px;
+    text-decoration:none;
+    background:#ffffff;
+    color:#333;
+    padding:8px 12px;
+    border-radius:6px;
+    font-size:14px;
+    transition: all 0.2s ease;
+}
+
+/* Hover */
+.btn-volver:hover{
+    background:#c6db15;
+    color: #ffffff;
+}

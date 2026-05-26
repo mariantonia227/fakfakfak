@@ -1,0 +1,90 @@
+/* Fuente general */
+body{
+    font-family: 'Inter', sans-serif;
+    background:#f4f6f9;
+    margin:0;
+    padding:0;
+}
+
+/* Contenedor del formulario */
+.form-container{
+    width:500px;
+    margin:60px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.244);
+}
+
+
+
+.btn-volver {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    background: #8ebf32;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-volver:hover {
+    background: #5e7f1f;
+}
+
+
+
+/* Título */
+.form-container h2{
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* Labels */
+form label{
+    display:block;
+    margin-top:15px;
+    font-weight:600;
+    color:#555;
+}
+
+/* Inputs */
+form input,
+form textarea,
+form select{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    font-size:14px;
+    box-sizing:border-box;
+}
+
+/* Textarea tamaño */
+form textarea{
+    resize:vertical;
+    min-height:80px;
+}
+
+/* Botón guardar */
+button{
+    margin-top:20px;
+    width:100%;
+    padding:12px;
+    background:#8ebf32;
+    border:none;
+    border-radius:6px;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* Hover botón */
+button:hover{
+    opacity: 0.9;
+}

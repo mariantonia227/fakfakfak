@@ -1,0 +1,193 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+display:flex;
+background:#f4f6f9;
+color:#222;
+}
+
+
+
+
+
+.header-seccion{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:35px;
+    margin-bottom:18px;
+}
+/* CONTENEDOR DEL FILTRO */
+.filtro-form{
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+/* SELECT */
+.filtro-form select{
+    padding:10px 14px;
+    border-radius:10px;
+    border:1px solid #ddd;
+    background:white;
+    font-size:14px;
+    outline:none;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+/* HOVER SELECT */
+.filtro-form select:hover{
+    border-color:#80B918;
+}
+
+/* BOTÓN */
+.filtro-form button{
+    padding:10px 16px;
+    border:none;
+    border-radius:10px;
+    background:#80B918;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+/* HOVER BOTÓN */
+.filtro-form button:hover{
+    background:#6A994E;
+    transform:translateY(-1px);
+}
+
+/* OPCIONAL: versión más pequeña */
+.filtro-form.small select,
+.filtro-form.small button{
+    padding:8px 12px;
+    font-size:13px;
+}
+
+
+
+/* TABLA */
+.tabla-box{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+overflow:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+thead{
+background:#f7f8fa;
+}
+
+th,td{
+padding:14px;
+text-align:center;
+font-size:14px;
+}
+
+tbody tr{
+border-bottom:1px solid #eee;
+}
+
+tbody tr:hover{
+background:#fafafa;
+}
+
+/* ESTADOS */
+.estado{
+padding:7px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:700;
+}
+
+.estado.pendiente{
+background:#fff3cd;
+color:#856404;
+}
+
+.estado.aprobado{
+background:#d4edda;
+color:#155724;
+}
+
+.estado.rechazado{
+background:#f8d7da;
+color:#721c24;
+}
+
+.estado.suspendido{
+background:#d6d8db;
+color:#383d41;
+}
+
+/* BOTONES */
+.acciones{
+display:flex;
+flex-wrap:wrap;
+gap:6px;
+justify-content:center;
+}
+
+.btn{
+padding:8px 10px;
+border-radius:10px;
+text-decoration:none;
+font-size:12px;
+font-weight:600;
+color:white;
+transition:.2s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+.aprobar{
+background:#28a745;
+}
+
+.rechazar{
+background:#dc3545;
+}
+
+.suspender{
+background:#6c757d;
+}
+
+.eliminar{
+background:#111;
+}
+
+/* VACIO */
+.vacio{
+padding:30px;
+color:#777;
+}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+
+.sidebar{
+width:220px;
+}
+
+th,td{
+font-size:13px;
+padding:10px;
+}
+
+}

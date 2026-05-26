@@ -1,0 +1,150 @@
+body {
+    background-color: #f4f6f9;
+    font-family: 'Inter', sans-serif;
+}
+
+/* TÍTULO */
+h1 {
+    margin-top: 20px;
+    padding: 0 80px;
+    font-size: 28px;
+}
+
+/* TABLA */
+table {
+    width: calc(100% - 160px);
+    margin: 30px 80px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ENCABEZADOS */
+th {
+    background-color: #c6db15;
+    color: #000;
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* CELDAS */
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* FILA HOVER */
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* BOTÓN ELIMINAR */
+td a {
+    text-decoration: none;
+    color: #ff4d4d;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+td a:hover {
+    color: #cc0000;
+}
+
+/* TOTAL */
+tr:last-child td {
+    font-size: 16px;
+}
+
+/* BOTÓN COMPRAR */
+a[href*="comprar"] {
+    display: inline-block;
+    margin: 20px 80px;
+    padding: 12px 25px;
+    background-color: #c6db15;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+a[href*="comprar"]:hover {
+    background-color: #e8e8e8;
+    color: #000000b6;
+}
+
+/* SEGUIR COMPRANDO */
+a[href="principal.php"] {
+    display: inline-block;
+    margin: 20px 80px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+a[href="principal.php"]:hover {
+    text-decoration: underline;
+}
+
+td img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+.seguir-comprando {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin: 20px 40px;
+    padding: 10px 5px;
+
+    background: #ffffff;
+    color: #333;
+
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: all 0.2s ease;
+}
+
+/* HOVER */
+.seguir-comprando:hover {
+    background: #c6db15;
+    color: #ffffff;
+}
+
+
+
+.btn-eliminar {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-eliminar:hover {
+    text-decoration: underline;
+}
+
+.btn-comprar {
+    display: inline-block;
+    margin: 20px;
+    padding: 12px 20px;
+    background: #c6db15;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}

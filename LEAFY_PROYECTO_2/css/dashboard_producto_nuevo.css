@@ -1,0 +1,87 @@
+body {
+    background: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Contenedor principal centrado */
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px; /* ← espacio arriba y abajo */
+}
+
+.btn-volver {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    background: #8ebf32;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-volver:hover {
+    background: #5e7f1f;
+}
+
+/* Tarjeta del formulario */
+.form-container {
+    background: white;
+    padding: 35px 60px;
+    border-radius: 18px;
+    width: 520px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.26);
+}
+
+/* Título */
+.form-container h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Inputs */
+.form-producto label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-producto input,
+.form-producto textarea,
+.form-producto select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.form-producto textarea {
+    resize: none;
+    height: 110px;
+}
+
+.btn-guardar {
+    margin-top: 25px;
+    background: #8ebf32;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-guardar:hover {
+    opacity: 0.9;
+}

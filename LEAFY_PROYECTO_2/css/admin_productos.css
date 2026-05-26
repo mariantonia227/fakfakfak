@@ -1,0 +1,90 @@
+/* RESET */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+display:flex;
+background:#f4f6f9;
+color:#222;
+}
+
+
+
+/* TABLA */
+.tabla-box{
+background:#fff;
+padding:25px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+overflow:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+thead{
+background:#f8f9fa;
+}
+
+th,td{
+padding:14px;
+text-align:center;
+font-size:14px;
+}
+
+tbody tr{
+border-bottom:1px solid #eee;
+}
+
+tbody tr:hover{
+background:#fafafa;
+}
+
+/* ESTADOS */
+.estado{
+padding:7px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:700;
+}
+
+.estado.activo{
+background:#d4edda;
+color:#155724;
+}
+
+.estado.agotado{
+background:#f8d7da;
+color:#721c24;
+}
+
+/* BOTONES */
+.btn{
+padding:8px 12px;
+border-radius:10px;
+text-decoration:none;
+font-size:12px;
+font-weight:600;
+color:white;
+transition:.2s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+.eliminar{
+background:#111;
+}
+
+/* VACIO */
+.vacio{
+padding:30px;
+color:#777;
+}

@@ -1,0 +1,115 @@
+.panel-comentarios{
+    background:white;
+    padding:30px;
+    border-radius:22px;
+    box-shadow:0 8px 22px rgba(0,0,0,0.05);
+    border:1px solid #eee;
+}
+
+/* ALERTA */
+
+.alerta-ok{
+    background:#d4edda;
+    color:#155724;
+    padding:14px 18px;
+    border-radius:14px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+/* BUSCADOR */
+
+.buscador{
+    display:flex;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.buscador input{
+    flex:1;
+    padding:14px 16px;
+    border:1px solid #ddd;
+    border-radius:14px;
+    outline:none;
+    font-size:14px;
+}
+
+.buscador input:focus{
+    border-color:#80B918;
+    box-shadow:0 0 0 4px rgba(128,185,24,0.12);
+}
+
+.buscador button{
+    background:#C6DB15;
+    color:#111;
+    border:none;
+    padding:14px 20px;
+    border-radius:14px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+/* TABLA */
+
+.tabla-admin{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.tabla-admin thead{
+    background:#F7F7F7;
+}
+
+.tabla-admin th{
+    padding:14px;
+    text-align:center;
+    font-size:14px;
+    color:#666;
+}
+
+.tabla-admin td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+    color:#222;
+}
+
+.tabla-admin tbody tr:hover{
+    background:#fafafa;
+}
+
+/* BOTON */
+
+.btn-eliminar{
+    background:#e74c3c;
+    color:white;
+    padding:8px 14px;
+    border-radius:10px;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.btn-eliminar:hover{
+    opacity:0.9;
+}
+
+/* VACIO */
+
+.sin-datos{
+    padding:25px;
+    color:#777;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:800px){
+
+    .buscador{
+        flex-direction:column;
+    }
+
+    .tabla-admin{
+        font-size:13px;
+    }
+
+}

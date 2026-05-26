@@ -1,0 +1,106 @@
+/* MAIN */
+.main{
+margin-left:260px;
+padding:35px;
+width:100%;
+}
+
+
+
+/* TABLA */
+.tabla-box{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 8px 20px rgba(0,0,0,.06);
+overflow:auto;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+thead{
+background:#f7f8fa;
+}
+
+th,td{
+padding:14px;
+text-align:center;
+font-size:14px;
+}
+
+tbody tr{
+border-bottom:1px solid #eee;
+}
+
+tbody tr:hover{
+background:#fafafa;
+}
+
+/* ESTADOS */
+
+.estado{
+padding:7px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:700;
+}
+
+.estado.pendiente{
+background:#fff3cd;
+color:#856404;
+}
+
+.estado.revisado{
+background:#d4edda;
+color:#155724;
+}
+
+.estado.cerrado{
+background:#d6d8db;
+color:#333;
+}
+
+/* ACCIONES */
+
+.acciones{
+display:flex;
+flex-wrap:wrap;
+gap:6px;
+justify-content:center;
+}
+
+.btn{
+padding:8px 10px;
+border-radius:10px;
+text-decoration:none;
+font-size:12px;
+font-weight:600;
+color:white;
+transition:.2s;
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+.revisar{
+background:#28a745;
+}
+
+.eliminar{
+background:#dc3545;
+}
+
+.cerrar{
+background:#111;
+}
+
+/* VACIO */
+
+.vacio{
+padding:30px;
+color:#777;
+}

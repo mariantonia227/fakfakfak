@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    display:flex;
+    background:#F7F7F7;
+    min-height:100vh;
+}
+
+
+
+/* ================= MAIN ================= */
+
+.main{
+    margin-left:250px;
+    flex:1;
+    padding:35px;
+}
+
+/* ================= TOPBAR ================= */
+
+.topbar{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.user-menu{
+    position:relative;
+}
+
+.user-trigger{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    background:white;
+    padding:10px 14px;
+    border-radius:14px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.05);
+}
+
+.perfil-img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* Dropdown */
+
+.dropdown{
+    position:absolute;
+    top:60px;
+    right:0;
+    background:white;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    display:none;
+    flex-direction:column;
+    min-width:180px;
+    overflow:hidden;
+    z-index:1000;
+}
+
+.dropdown a{
+    padding:14px;
+    text-decoration:none;
+    color:#333;
+}
+
+.dropdown a:hover{
+    background:#F7F7F7;
+}
+
+.dropdown.active{
+    display:flex;
+}
+
+/* ================= CONFIG BOX ================= */
+
+.config-container{
+    background:white;
+    padding:35px;
+    border-radius:22px;
+    width:100%;
+    max-width:560px;
+    box-shadow:0 8px 22px rgba(0,0,0,0.05);
+    border:1px solid #eee;
+}
+
+.config-container h2{
+    font-size:30px;
+    color:#111;
+    margin-bottom:10px;
+}
+
+.config-container p{
+    color:#777;
+    margin-bottom:25px;
+    font-size:15px;
+}
+
+/* ================= FORM ================= */
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:600;
+    color:#333;
+}
+
+input,
+textarea{
+    padding:14px 16px;
+    margin-bottom:18px;
+    border:1px solid #ddd;
+    border-radius:14px;
+    font-size:14px;
+    outline:none;
+    transition:0.25s;
+    resize:none;
+    background:#fff;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#80B918;
+    box-shadow:0 0 0 4px rgba(128,185,24,0.12);
+}
+
+textarea{
+    min-height:120px;
+}
+
+/* ================= BUTTON ================= */
+
+button{
+    background:#C6DB15;
+    color:#111;
+    border:none;
+    padding:14px;
+    border-radius:14px;
+    cursor:pointer;
+    font-weight:700;
+    font-size:15px;
+    transition:0.25s ease;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    opacity:0.95;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .sidebar{
+        width:85px;
+        padding:25px 10px;
+    }
+
+    .sidebar h2{
+        font-size:18px;
+        text-align:center;
+    }
+
+    .sidebar a{
+        justify-content:center;
+        font-size:0;
+    }
+
+    .main{
+        margin-left:85px;
+        padding:25px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .config-container{
+        padding:25px;
+    }
+
+}
+
+
+/* ================= NUEVO LAYOUT ================= */
+
+.config-title{
+    font-size:32px;
+    color:#111;
+    margin-bottom:25px;
+}
+
+.config-layout{
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:28px;
+    align-items:start;
+}
+
+/* ================= SIDEBAR PERFIL ================= */
+
+.config-sidebar{
+    background:white;
+    border-radius:24px;
+    padding:30px;
+    box-shadow:0 8px 22px rgba(0,0,0,0.05);
+    border:1px solid #eee;
+    position:sticky;
+    top:30px;
+}
+
+.perfil-preview{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.preview-img{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:18px;
+    border:4px solid #f1f1f1;
+}
+
+.perfil-preview h3{
+    font-size:26px;
+    color:#111;
+    margin-bottom:6px;
+}
+
+.perfil-preview p{
+    color:#777;
+    font-size:14px;
+    margin-bottom:14px;
+}
+
+.estado-negocio{
+    background:#80B918;
+    color:white;
+    padding:8px 18px;
+    border-radius:999px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* ================= FORM NUEVO ================= */
+
+.config-content{
+    background:white;
+    padding:35px;
+    border-radius:24px;
+    box-shadow:0 8px 22px rgba(0,0,0,0.05);
+    border:1px solid #eee;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.input-group label{
+    margin-bottom:8px;
+    font-size:14px;
+    font-weight:600;
+    color:#333;
+}
+
+.input-group input,
+.input-group textarea{
+    padding:14px 16px;
+    border:1px solid #ddd;
+    border-radius:14px;
+    font-size:14px;
+    outline:none;
+    transition:0.25s;
+    resize:none;
+    background:#fff;
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+    border-color:#80B918;
+    box-shadow:0 0 0 4px rgba(128,185,24,0.12);
+}
+
+.input-group textarea{
+    min-height:120px;
+}
+
+/* ================= BOTON ================= */
+
+.btn-save{
+    background:#C6DB15;
+    color:#111;
+    border:none;
+    padding:14px;
+    border-radius:14px;
+    cursor:pointer;
+    font-weight:700;
+    font-size:15px;
+    transition:0.25s ease;
+}
+
+.btn-save:hover{
+    transform:translateY(-2px);
+    opacity:0.95;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1000px){
+
+    .config-layout{
+        grid-template-columns:1fr;
+    }
+
+    .config-sidebar{
+        position:relative;
+        top:0;
+    }
+
+}
